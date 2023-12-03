@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
   <head>
     <title>0xJeu</title>
@@ -51,11 +47,7 @@
             <span class="arrow icon solid fa-chevron-right"
               ><span>See my work</span></span
             >
-            <img
-              src="images/GitHub_Logo.jpg"
-              alt=""
-              style="width: 100%; height: auto"
-            />
+            <img src="images/GitHub_Logo.jpg" alt="" style="width: 100%" />
           </a>
         </article>
 
@@ -83,21 +75,25 @@
                 <a href="#" class="image fit"
                   ><img src="static/images/pic03.jpg" alt=""
                 /></a>
+                <!-- <label>Test</label> -->
               </div>
               <div class="col-4 col-6-medium col-12-small">
                 <a href="#" class="image fit"
                   ><img src="static/images/pic04.jpg" alt=""
                 /></a>
+                <!-- <label>Test</label> -->
               </div>
               <div class="col-4 col-6-medium col-12-small">
                 <a href="#" class="image fit"
                   ><img src="static/images/pic05.jpg" alt=""
                 /></a>
+                <!-- <label>Test</label> -->
               </div>
               <div class="col-4 col-6-medium col-12-small">
                 <a href="#" class="image fit"
                   ><img src="static/images/pic06.jpg" alt=""
                 /></a>
+                <!-- <label>Test</label> -->
               </div>
               <div class="col-4 col-6-medium col-12-small">
                 <a href="#" class="image fit"
@@ -168,9 +164,8 @@
 
       <!-- Footer -->
       <div id="footer">
-        <ul class="copyright">
-          <li>&copy; Black Capital Ventures.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <ul class="copyright" style="font-size: 18px; color: white">
+          <li>&copy; 0xJeu Labs.</li>
         </ul>
       </div>
     </div>
@@ -181,5 +176,23 @@
     <script src="static/assets/js/breakpoints.min.js"></script>
     <script src="static/assets/js/util.js"></script>
     <script src="static/assets/js/main.js"></script>
+    <script>
+      // This code will run when the window is fully loaded
+      window.onload = function () {
+        // Select all the divs that might contain the label
+        var panels = document.querySelectorAll(
+          ".col-4.col-6-medium.col-12-small"
+        );
+
+        // Loop through each panel
+        panels.forEach(function (panel) {
+          // Check if the panel does not contain a label
+          if (!panel.querySelector("label")) {
+            // Hide the panel by setting its display style to none
+            panel.style.display = "none";
+          }
+        });
+      };
+    </script>
   </body>
 </html>
